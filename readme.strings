@@ -1,0 +1,38 @@
+/* @objc func didPan(_ recognizer: UIPanGestureRecognizer) {
+    let location = recognizer.location(in: sceneView)
+    // Drag the object on an infinite plane
+    let arHitTestResult = sceneView.hitTest(location, types: .existingPlaneUsingExtent)
+    if !arHitTestResult.isEmpty {
+        let hit = arHitTestResult.first!
+        
+        
+        sceneView.scene.rootNode.enumerateChildNodes{(node, _) in
+            if node.name=="first" {
+                node.removeFromParentNode()
+            }
+        }
+        let newLocation = SCNVector3(x: hit.worldTransform.columns.3.x, y: hit.worldTransform.columns.3.y, z: hit.worldTransform.columns.3.z)
+        let boxNode = addBox()
+        boxNode.position = newLocation
+        boxNode.name="first"
+        sceneView.scene.rootNode.addChildNode(boxNode)
+    } */
+
+
+//        let box = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
+//        let boxNode = SCNNode()
+//        let material = SCNMaterial()
+//        material.diffuse.contents=UIImage(named: "wood.jpg")
+//        box.materials=[material]
+//
+//        boxNode.geometry = box
+//        boxNode.physicsBody = SCNPhysicsBody(type: SCNPhysicsBodyType.static, shape: nil)
+//
+//
+//        return boxNode
+
+
+
+//        let cup=SCNScene(named: "cup.scn")
+//        let node=cup?.rootNode.childNode(withName: "cup", recursively: true)
+//        return node!

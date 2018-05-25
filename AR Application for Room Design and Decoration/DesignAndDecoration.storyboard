@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hPm-Ka-xIb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Design and Decoration-->
+        <scene sceneID="MMM-Fj-Byg">
+            <objects>
+                <viewController id="hPm-Ka-xIb" customClass="DesignAndDecorationViewController" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OE0-Z7-97L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jK-GO-Fgr" customClass="ui">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fz-JX-6ey" customClass="UIViewX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                <rect key="frame" x="63" y="503.5" width="250" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqW-Db-ZoG" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="105" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="kcQ-dR-qXW"/>
+                                            <constraint firstAttribute="width" constant="40" id="lPr-8H-QoV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showTableFurniture:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="cgt-b5-2ck"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKv-y1-cgH" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="62.5" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="mId-eP-IVt"/>
+                                            <constraint firstAttribute="height" constant="40" id="xfl-18-OQh"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showTableFurniture:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="ATT-nd-GlT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4W-lC-e5b" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="26.5" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="SkW-7p-vjS"/>
+                                            <constraint firstAttribute="width" constant="40" id="enT-cG-ooa"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showTableFurniture:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="NBF-NJ-2t5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNz-z3-1Gu" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                        <rect key="frame" x="82" y="7.5" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="k8X-wf-XuF"/>
+                                            <constraint firstAttribute="height" constant="40" id="spc-og-mlb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showTableFurniture:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="d4F-cL-rAF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wP-F9-6BA" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                        <rect key="frame" x="128" y="7.5" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="G7d-QF-2NH"/>
+                                            <constraint firstAttribute="width" constant="40" id="bvW-ib-OMt"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showTableFurniture:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="Hx2-Oq-WGF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRY-gn-gh6" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="27" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8iU-4G-pyH"/>
+                                            <constraint firstAttribute="width" constant="40" id="M7d-IK-n9v"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showTableFurniture:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="s1I-AX-bJJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spn-ay-tE3" userLabel="Btn Sofa" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                        <rect key="frame" x="195" y="62.5" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="ILa-wQ-aQX"/>
+                                            <constraint firstAttribute="height" constant="40" id="T55-94-RuR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showTableFurniture:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="RKA-MI-Sxg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1q-7s-MY0" userLabel="Btn Bed" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                        <rect key="frame" x="205" y="104.5" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="dUa-Ik-TR7"/>
+                                            <constraint firstAttribute="height" constant="40" id="oEm-DC-Q55"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showTableFurniture:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="t51-OW-2h9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4wP-F9-6BA" secondAttribute="bottom" constant="202" id="2tH-Oc-KzM"/>
+                                    <constraint firstItem="WqW-Db-ZoG" firstAttribute="leading" secondItem="2fz-JX-6ey" secondAttribute="leading" constant="5" id="4N0-Gs-Smy"/>
+                                    <constraint firstItem="hNz-z3-1Gu" firstAttribute="leading" secondItem="2fz-JX-6ey" secondAttribute="leading" constant="82" id="D6n-vN-yfM"/>
+                                    <constraint firstAttribute="trailing" secondItem="spn-ay-tE3" secondAttribute="trailing" constant="15" id="Dn4-Lv-dPe"/>
+                                    <constraint firstItem="xKv-y1-cgH" firstAttribute="leading" secondItem="2fz-JX-6ey" secondAttribute="leading" constant="15" id="DxB-7O-XoH"/>
+                                    <constraint firstAttribute="trailing" secondItem="E1q-7s-MY0" secondAttribute="trailing" constant="5" id="I5G-Cm-uWB"/>
+                                    <constraint firstAttribute="bottom" secondItem="k4W-lC-e5b" secondAttribute="bottom" constant="183" id="MqR-Ft-HZg"/>
+                                    <constraint firstAttribute="bottom" secondItem="xKv-y1-cgH" secondAttribute="bottom" constant="147" id="N4B-o7-LP8"/>
+                                    <constraint firstAttribute="width" constant="250" id="TVo-6R-Vd3"/>
+                                    <constraint firstAttribute="trailing" secondItem="4wP-F9-6BA" secondAttribute="trailing" constant="82" id="TWk-xS-xA9"/>
+                                    <constraint firstAttribute="bottom" secondItem="WqW-Db-ZoG" secondAttribute="bottom" constant="105" id="e8w-UM-Jdh"/>
+                                    <constraint firstItem="k4W-lC-e5b" firstAttribute="leading" secondItem="2fz-JX-6ey" secondAttribute="leading" constant="42" id="gRN-lP-PFq"/>
+                                    <constraint firstAttribute="trailing" secondItem="eRY-gn-gh6" secondAttribute="trailing" constant="42" id="hAS-JT-OAW"/>
+                                    <constraint firstAttribute="bottom" secondItem="eRY-gn-gh6" secondAttribute="bottom" constant="183" id="hCB-Da-Xsi"/>
+                                    <constraint firstAttribute="bottom" secondItem="spn-ay-tE3" secondAttribute="bottom" constant="147" id="oZo-dp-GI8"/>
+                                    <constraint firstAttribute="bottom" secondItem="E1q-7s-MY0" secondAttribute="bottom" constant="105" id="pbN-wi-JD3"/>
+                                    <constraint firstAttribute="height" constant="250" id="rHb-9s-wVh"/>
+                                    <constraint firstAttribute="bottom" secondItem="hNz-z3-1Gu" secondAttribute="bottom" constant="202" id="wcA-dV-z8D"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="125"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqx-1z-IXh" customClass="FloatingActionButton" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                <rect key="frame" x="163.5" y="604" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="1G4-qU-baA"/>
+                                    <constraint firstAttribute="width" constant="48" id="Xcc-rx-5Sh"/>
+                                </constraints>
+                                <state key="normal" image="add"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="menuTapper:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="I20-HV-tTU"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpa-ml-2nQ">
+                                <rect key="frame" x="0.0" y="597" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="del"/>
+                                <connections>
+                                    <action selector="btnDeleteEvent" destination="hPm-Ka-xIb" eventType="touchUpInside" id="RsI-m5-i7l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWU-PR-7PF" userLabel="Btn Take Screen" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                <rect key="frame" x="5" y="605" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Eco-hm-iaW"/>
+                                    <constraint firstAttribute="height" constant="48" id="vBP-gg-nyh"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="camera"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnTakeScreendEvent" destination="hPm-Ka-xIb" eventType="touchUpInside" id="Rxb-G7-eeh"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORn-0x-PJ9" customClass="UIViewX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                <rect key="frame" x="220" y="422" width="280" height="400"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8p0-zC-zet">
+                                        <rect key="frame" x="8" y="133" width="140" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="AlN-Dg-tcM"/>
+                                            <constraint firstAttribute="width" constant="140" id="ZaH-4k-a0H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="-110" minY="0.0" maxX="33" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="102" minY="0.0" maxX="13" maxY="0.0"/>
+                                        <state key="normal" title="Record" image="record">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startRecordWithSender:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="tif-Uw-IkZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuh-P3-DBY">
+                                        <rect key="frame" x="8" y="77" width="140" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Bk2-tI-0DK"/>
+                                            <constraint firstAttribute="width" constant="140" id="GRL-K1-wk2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="-54" minY="0.0" maxX="33" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="102" minY="0.0" maxX="13" maxY="0.0"/>
+                                        <state key="normal" title="Reset Place" image="reset">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnResetEvent" destination="hPm-Ka-xIb" eventType="touchUpInside" id="B5H-Sn-7BT"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAj-dS-0c1">
+                                        <rect key="frame" x="8" y="29" width="40" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="18I-Rj-zRj"/>
+                                            <constraint firstAttribute="width" constant="40" id="fDh-0S-Kl7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXb-CA-oQe">
+                                        <rect key="frame" x="87" y="23" width="51" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="lqo-Ig-T0z"/>
+                                            <constraint firstAttribute="width" constant="49" id="xlk-3n-1l4"/>
+                                        </constraints>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="fAj-dS-0c1" firstAttribute="leading" secondItem="ORn-0x-PJ9" secondAttribute="leading" constant="8" id="3ao-CJ-t2Z"/>
+                                    <constraint firstItem="tuh-P3-DBY" firstAttribute="top" secondItem="ORn-0x-PJ9" secondAttribute="top" constant="77" id="64l-JZ-QZM"/>
+                                    <constraint firstItem="8p0-zC-zet" firstAttribute="top" secondItem="ORn-0x-PJ9" secondAttribute="top" constant="133" id="FAa-nk-5Tj"/>
+                                    <constraint firstItem="sXb-CA-oQe" firstAttribute="top" secondItem="ORn-0x-PJ9" secondAttribute="top" constant="23" id="JdQ-bk-btJ"/>
+                                    <constraint firstAttribute="height" constant="400" id="JeJ-q3-kiH"/>
+                                    <constraint firstItem="tuh-P3-DBY" firstAttribute="leading" secondItem="ORn-0x-PJ9" secondAttribute="leading" constant="8" id="NeA-wb-Go6"/>
+                                    <constraint firstItem="sXb-CA-oQe" firstAttribute="leading" secondItem="ORn-0x-PJ9" secondAttribute="leading" constant="87" id="SdH-rw-u29"/>
+                                    <constraint firstItem="8p0-zC-zet" firstAttribute="leading" secondItem="ORn-0x-PJ9" secondAttribute="leading" constant="8" id="T5P-sA-h5y"/>
+                                    <constraint firstItem="fAj-dS-0c1" firstAttribute="top" secondItem="ORn-0x-PJ9" secondAttribute="top" constant="29" id="kU8-xG-NZ3"/>
+                                    <constraint firstAttribute="width" constant="280" id="lW3-Ti-ty1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N9-0x-EbD" customClass="OptionActionButton" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                <rect key="frame" x="322" y="605" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="0dv-oA-SoZ"/>
+                                    <constraint firstAttribute="height" constant="48" id="C9x-Z2-Mlz"/>
+                                </constraints>
+                                <state key="normal" image="setting"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionTapper:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="cd8-DU-V22"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="umc-Zp-RZd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrU-Cz-evX" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                <rect key="frame" x="323" y="73" width="48" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="MZY-Q1-Srx"/>
+                                    <constraint firstAttribute="height" constant="48" id="Ymn-eU-ZCa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <state key="normal" backgroundImage="stop"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopRecordWithSender:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="5te-oj-pIJ"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCW-ss-RVQ" userLabel="Btn Cancel" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                <rect key="frame" x="5" y="605" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Pcw-3J-j7t"/>
+                                    <constraint firstAttribute="width" constant="48" id="mu7-Uu-qqU"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="cancel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnCancelEvent" destination="hPm-Ka-xIb" eventType="touchUpInside" id="BT4-EX-tMj"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT4-Jf-CBb" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                <rect key="frame" x="4" y="73" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="7g5-Pm-3WG"/>
+                                    <constraint firstAttribute="height" constant="48" id="Ih4-RE-1ga"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="start"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playVideoWithSender:" destination="hPm-Ka-xIb" eventType="touchUpInside" id="oVk-4s-XdZ"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPc-yk-agX" userLabel="Btn Share" customClass="UIButtonX" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                <rect key="frame" x="323" y="73" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="9GZ-s7-wvu"/>
+                                    <constraint firstAttribute="width" constant="48" id="Mqo-AH-BPh"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="share"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnShareEvent" destination="hPm-Ka-xIb" eventType="touchUpInside" id="YjJ-XJ-yBC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="8jK-GO-Fgr" firstAttribute="trailing" secondItem="f4e-ax-yLq" secondAttribute="trailing" id="3sz-Wf-A4x"/>
+                            <constraint firstItem="NrU-Cz-evX" firstAttribute="top" secondItem="OE0-Z7-97L" secondAttribute="top" constant="73" id="5zb-6a-JV3"/>
+                            <constraint firstItem="umc-Zp-RZd" firstAttribute="top" secondItem="OE0-Z7-97L" secondAttribute="top" id="6M5-Cb-xgf"/>
+                            <constraint firstItem="8jK-GO-Fgr" firstAttribute="leading" secondItem="f4e-ax-yLq" secondAttribute="leading" id="Eyg-OJ-t0e"/>
+                            <constraint firstAttribute="trailing" secondItem="1N9-0x-EbD" secondAttribute="trailing" constant="5" id="FHR-1i-d7e"/>
+                            <constraint firstAttribute="bottom" secondItem="TWU-PR-7PF" secondAttribute="bottom" constant="14" id="FR1-SQ-f1N"/>
+                            <constraint firstAttribute="trailing" secondItem="NrU-Cz-evX" secondAttribute="trailing" constant="4" id="KuW-db-zyH"/>
+                            <constraint firstAttribute="trailing" secondItem="ORn-0x-PJ9" secondAttribute="trailing" constant="-125" id="LSy-oj-IKd"/>
+                            <constraint firstAttribute="trailing" secondItem="pPc-yk-agX" secondAttribute="trailing" constant="4" id="NOe-HL-jMM"/>
+                            <constraint firstItem="CT4-Jf-CBb" firstAttribute="top" secondItem="OE0-Z7-97L" secondAttribute="top" constant="73" id="OHi-mb-wYT"/>
+                            <constraint firstItem="pPc-yk-agX" firstAttribute="top" secondItem="OE0-Z7-97L" secondAttribute="top" constant="73" id="YgJ-a1-RrA"/>
+                            <constraint firstItem="f4e-ax-yLq" firstAttribute="bottom" secondItem="gqx-1z-IXh" secondAttribute="bottom" constant="15" id="b8H-W9-1vq"/>
+                            <constraint firstAttribute="bottom" secondItem="LCW-ss-RVQ" secondAttribute="bottom" constant="14" id="fgv-pJ-IfT"/>
+                            <constraint firstItem="LCW-ss-RVQ" firstAttribute="leading" secondItem="f4e-ax-yLq" secondAttribute="leading" constant="5" id="hU1-oa-7gy"/>
+                            <constraint firstAttribute="bottom" secondItem="1N9-0x-EbD" secondAttribute="bottom" constant="14" id="j4v-Uv-WE6"/>
+                            <constraint firstItem="umc-Zp-RZd" firstAttribute="leading" secondItem="OE0-Z7-97L" secondAttribute="leading" id="lEk-dv-gUI"/>
+                            <constraint firstItem="2fz-JX-6ey" firstAttribute="centerX" secondItem="8jK-GO-Fgr" secondAttribute="centerX" id="ms4-RY-PQv"/>
+                            <constraint firstAttribute="trailing" secondItem="umc-Zp-RZd" secondAttribute="trailing" id="n0X-6t-oRD"/>
+                            <constraint firstItem="8jK-GO-Fgr" firstAttribute="top" secondItem="OE0-Z7-97L" secondAttribute="top" id="nzE-2A-BDF"/>
+                            <constraint firstItem="2fz-JX-6ey" firstAttribute="centerY" secondItem="gqx-1z-IXh" secondAttribute="centerY" id="qBW-xe-nX1"/>
+                            <constraint firstItem="TWU-PR-7PF" firstAttribute="leading" secondItem="OE0-Z7-97L" secondAttribute="leading" constant="5" id="rwJ-My-D8h"/>
+                            <constraint firstItem="8jK-GO-Fgr" firstAttribute="bottom" secondItem="f4e-ax-yLq" secondAttribute="bottom" id="sqq-6F-edh"/>
+                            <constraint firstAttribute="bottom" secondItem="umc-Zp-RZd" secondAttribute="bottom" id="sw3-ma-3bR"/>
+                            <constraint firstItem="ORn-0x-PJ9" firstAttribute="top" secondItem="OE0-Z7-97L" secondAttribute="top" constant="422" id="uAW-Sd-DWQ"/>
+                            <constraint firstItem="gqx-1z-IXh" firstAttribute="centerX" secondItem="8jK-GO-Fgr" secondAttribute="centerX" id="xgl-gt-zhv"/>
+                            <constraint firstItem="CT4-Jf-CBb" firstAttribute="leading" secondItem="OE0-Z7-97L" secondAttribute="leading" constant="4" id="ys1-TT-UKU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f4e-ax-yLq"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ic3-C1-sbW" appends="YES" id="ejW-Fe-6Ku"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Design and Decoration" id="9qY-He-urv"/>
+                    <connections>
+                        <outlet property="btn1" destination="WqW-Db-ZoG" id="laF-7Z-2Qh"/>
+                        <outlet property="btn2" destination="xKv-y1-cgH" id="QO4-6i-w6J"/>
+                        <outlet property="btn3" destination="k4W-lC-e5b" id="U8b-ix-WGe"/>
+                        <outlet property="btn4" destination="hNz-z3-1Gu" id="Zra-B4-IAL"/>
+                        <outlet property="btn5" destination="4wP-F9-6BA" id="Ll1-Rn-wpd"/>
+                        <outlet property="btn6" destination="eRY-gn-gh6" id="H27-KC-b8J"/>
+                        <outlet property="btn7" destination="spn-ay-tE3" id="Oi9-Oq-aXd"/>
+                        <outlet property="btn8" destination="E1q-7s-MY0" id="5m9-um-SaT"/>
+                        <outlet property="btnCancel" destination="LCW-ss-RVQ" id="PQN-9V-bpH"/>
+                        <outlet property="btnDelete" destination="Vpa-ml-2nQ" id="V9m-3u-sFI"/>
+                        <outlet property="btnMenu" destination="gqx-1z-IXh" id="rjg-35-1Nl"/>
+                        <outlet property="btnOption" destination="1N9-0x-EbD" id="dnC-jQ-HWT"/>
+                        <outlet property="btnReset" destination="tuh-P3-DBY" id="SD6-hr-SM5"/>
+                        <outlet property="btnShare" destination="pPc-yk-agX" id="cOa-BV-zHh"/>
+                        <outlet property="btnTakeScreen" destination="TWU-PR-7PF" id="E3U-EK-yjI"/>
+                        <outlet property="imgView" destination="umc-Zp-RZd" id="LhC-nL-tYb"/>
+                        <outlet property="isPlay" destination="CT4-Jf-CBb" id="lCw-v3-DA7"/>
+                        <outlet property="isRecord" destination="NrU-Cz-evX" id="g6G-8m-PjI"/>
+                        <outlet property="menuView" destination="2fz-JX-6ey" id="H4q-ZT-MD2"/>
+                        <outlet property="optionView" destination="ORn-0x-PJ9" id="iWb-gl-E9s"/>
+                        <outlet property="sceneView" destination="8jK-GO-Fgr" id="aGy-1z-IAa"/>
+                        <outlet property="swtAudio" destination="sXb-CA-oQe" id="A7R-4q-eAF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QYk-Rx-Nxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ic3-C1-sbW">
+                    <connections>
+                        <action selector="tapBackground:" destination="hPm-Ka-xIb" id="3IQ-8L-Ul2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-242.40000000000001" y="30.134932533733135"/>
+        </scene>
+        <!--Table Furniture View Controller-->
+        <scene sceneID="VPB-Dn-44S">
+            <objects>
+                <viewController storyboardIdentifier="TableFurniture" modalPresentationStyle="overCurrentContext" id="PC5-2C-WCt" customClass="TableFurnitureViewController" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qeX-My-HDV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgE-h7-TEK">
+                                <rect key="frame" x="0.0" y="46" width="375" height="620.5"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ebr-vs-mZH">
+                                        <rect key="frame" x="0.0" y="62" width="375" height="558.5"/>
+                                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ebZ-ni-DGL">
+                                            <size key="itemSize" width="170" height="235"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="10" minY="15" maxX="10" maxY="5"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gP7-SK-87D" customClass="FurnitureCell" customModule="AR_Application_for_Room_Design_and_Decoration" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="15" width="170" height="235"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="170" height="235"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="udw-r1-3tk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="170" height="212"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XD-Ir-GLI">
+                                                            <rect key="frame" x="0.0" y="211" width="170" height="24"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="24" id="hG0-MO-lYl"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="udw-r1-3tk" firstAttribute="top" secondItem="gP7-SK-87D" secondAttribute="top" id="D5I-q9-f2l"/>
+                                                    <constraint firstItem="2XD-Ir-GLI" firstAttribute="leading" secondItem="udw-r1-3tk" secondAttribute="leading" id="KmJ-m9-GdR"/>
+                                                    <constraint firstItem="udw-r1-3tk" firstAttribute="height" secondItem="gP7-SK-87D" secondAttribute="height" multiplier="9:10" id="erz-2q-nCf"/>
+                                                    <constraint firstItem="2XD-Ir-GLI" firstAttribute="trailing" secondItem="udw-r1-3tk" secondAttribute="trailing" id="khv-L0-IzT"/>
+                                                    <constraint firstItem="udw-r1-3tk" firstAttribute="leading" secondItem="gP7-SK-87D" secondAttribute="leading" id="mde-WI-Hf8"/>
+                                                    <constraint firstItem="udw-r1-3tk" firstAttribute="width" secondItem="gP7-SK-87D" secondAttribute="width" id="oLU-2i-fRj"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2XD-Ir-GLI" secondAttribute="bottom" id="w0C-vc-bwj"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="imgItem" destination="udw-r1-3tk" id="1Sv-fh-nKi"/>
+                                                    <outlet property="lblItem" destination="2XD-Ir-GLI" id="Zr8-u5-0NV"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOf-qa-Ld3">
+                                        <rect key="frame" x="0.0" y="18" width="375" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5X-zi-YzH">
+                                        <rect key="frame" x="15" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Oga-PR-dD2"/>
+                                            <constraint firstAttribute="width" constant="40" id="rYf-Mq-bM5"/>
+                                        </constraints>
+                                        <state key="normal" image="cancel"/>
+                                        <connections>
+                                            <segue destination="ORu-lG-MTk" kind="unwind" unwindAction="returnedWithSegue:" id="OYt-2y-NAA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eOf-qa-Ld3" firstAttribute="centerY" secondItem="T5X-zi-YzH" secondAttribute="centerY" id="2bK-Up-l6e"/>
+                                    <constraint firstItem="ebr-vs-mZH" firstAttribute="leading" secondItem="vgE-h7-TEK" secondAttribute="leading" id="8VM-Ox-IxY"/>
+                                    <constraint firstItem="ebr-vs-mZH" firstAttribute="height" secondItem="vgE-h7-TEK" secondAttribute="height" multiplier="9:10" id="AZm-tD-B6z"/>
+                                    <constraint firstItem="T5X-zi-YzH" firstAttribute="leading" secondItem="vgE-h7-TEK" secondAttribute="leading" constant="15" id="EcI-1b-eAy"/>
+                                    <constraint firstAttribute="trailing" secondItem="ebr-vs-mZH" secondAttribute="trailing" id="GX2-fz-taG"/>
+                                    <constraint firstAttribute="bottom" secondItem="ebr-vs-mZH" secondAttribute="bottom" id="HmP-BN-WfH"/>
+                                    <constraint firstItem="eOf-qa-Ld3" firstAttribute="width" secondItem="vgE-h7-TEK" secondAttribute="width" id="Mg8-GP-baH"/>
+                                    <constraint firstItem="T5X-zi-YzH" firstAttribute="top" secondItem="vgE-h7-TEK" secondAttribute="top" constant="10" id="gqw-Xc-V8t"/>
+                                    <constraint firstAttribute="trailing" secondItem="eOf-qa-Ld3" secondAttribute="trailing" id="hjY-2T-XPq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vgE-h7-TEK" secondAttribute="trailing" id="2s3-18-w8i"/>
+                            <constraint firstItem="vgE-h7-TEK" firstAttribute="leading" secondItem="qeX-My-HDV" secondAttribute="leading" id="NMj-eX-nKm"/>
+                            <constraint firstAttribute="bottom" secondItem="vgE-h7-TEK" secondAttribute="bottom" id="fw8-ni-oWM"/>
+                            <constraint firstItem="vgE-h7-TEK" firstAttribute="height" secondItem="qeX-My-HDV" secondAttribute="height" multiplier="9.3:10" id="zsl-f1-ZqO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h4y-oZ-jde"/>
+                    </view>
+                    <connections>
+                        <outlet property="bigView" destination="vgE-h7-TEK" id="zBM-ec-cQH"/>
+                        <outlet property="btnClose" destination="T5X-zi-YzH" id="tJc-8s-iiK"/>
+                        <outlet property="coll" destination="ebr-vs-mZH" id="J1A-Th-Tyc"/>
+                        <outlet property="lblTabItem" destination="eOf-qa-Ld3" id="SY1-QV-wY3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJK-YQ-Emo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ORu-lG-MTk" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="576.79999999999995" y="29.23538230884558"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="128" height="128"/>
+        <image name="camera" width="128" height="128"/>
+        <image name="cancel" width="128" height="128"/>
+        <image name="del" width="50" height="50"/>
+        <image name="record" width="50" height="50"/>
+        <image name="reset" width="25" height="25"/>
+        <image name="setting" width="128" height="128"/>
+        <image name="share" width="128" height="128"/>
+        <image name="start" width="128" height="128"/>
+        <image name="stop" width="100" height="100"/>
+    </resources>
+</document>
